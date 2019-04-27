@@ -35,8 +35,8 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #8522FA;
-  opacity: 0.5;
+  background-color: #000;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -81,7 +81,7 @@ h4{
   font-family: 'Montserrat', sans-serif;
   font-style: bold;
   font-size: 20px;
-  color:#000;
+  color:#8421F8;
 }
 
 h5{
@@ -104,10 +104,20 @@ hr{
 
 
 .bg-light{
-    background-color: transparent!important;
+    background-color: rgba(132,33,248,.6)!important;
 
     z-index: 10;
     width:100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff!important;
+    font-family: 'Esteban', sans-serif;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+   border-bottom: 1px solid #fff;
 }
 
 p.lead{
