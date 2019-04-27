@@ -108,10 +108,16 @@ hr{
 
 
 .bg-light{
-    background-color: rgba(132,33,248,.6)!important;
-
+    background-color:transparent!important;
+    border: none;
     z-index: 10;
     width:100%;
+}
+
+.fixed-top.scrolled {
+   background-color: rgba(132,33,248)!important;
+  transition: background-color 200ms linear;
+  border: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -126,7 +132,7 @@ hr{
 
 p.lead{
   font-family: 'Esteban', sans-serif;
-  font-size: 35px;
+  font-size: 28px;
   color:#fff;
 }
 
