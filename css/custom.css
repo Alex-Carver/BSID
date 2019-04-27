@@ -52,6 +52,10 @@ header .overlay {
   }
 }
 
+.spacer{
+  margin-bottom: 25px;
+}
+
 section{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -165,6 +169,12 @@ p.card-text{
   padding-top:15px;
   border-radius: 12px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.more{
+  color: #8522FA;
+  text-decoration: none;
+
 }
 
 /*-Section one*/
