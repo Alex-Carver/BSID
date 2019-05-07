@@ -1,59 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Esteban|Montserrat:700');
-
-header {
-  position: relative;
-  background-color: black;
-  height: 100vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+@font-face {
+    font-family: 'Cloud';
+    src: url('Cloud-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+@font-face {
+    font-family: 'Cloud';
+    src: url('Cloud-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
-header .container {
-  position: relative;
-  z-index: 2;
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+
+body{
+  padding-top: 50px;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.6;
-  z-index: 1;
-}
-
-
-
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('../images/hero.jpeg') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
 
 .spacer{
   margin-bottom: 25px;
+}
+
+.spacer2{
+  margin-bottom: 100px;
 }
 
 section{
@@ -62,17 +34,77 @@ section{
 }
 
 h1{
-	font-family: 'Montserrat', sans-serif;
-	font-style: bold;
-	font-size: 45px;
-	color:#fff;
+	font-family: 'Cloud', sans-serif;
+	font-style: normal;
+	font-size: 60px;
+	color:#000;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+h1.display-phone{
+  font-family: 'Cloud', sans-serif;
+  font-style: bold;
+  font-size: 70px;
+  color:#fff;
+  font-weight: bold;
+  margin-top: 0px;
+
 }
 
 h2{
-  font-family: 'Montserrat', sans-serif;
-  font-style: bold;
-  font-size: 40px;
+  font-family: 'Cloud', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+ font-style: normal;
+ color: #000;
+}
+
+
+p.lead{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
   color:#000;
+  font-style: normal;
+  margin-bottom: 25px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.br{
+  padding-bottom: 10px;
+}
+
+p.lead-2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:#A2A2A2;
+  font-style: normal;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:#000;
+  line-height: 28px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p.card-text{
+  font-size: 20px;
+  color:#000;
+  font-family: 'Esteban', sans-serif;
+}
+
+p.caption{
+  font-family: 'Cloud', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: normal;
+  color: #000;
 }
 
 h3{
@@ -109,17 +141,17 @@ hr{
 
 
 .bg-light{
-    background-color:transparent!important;
+    background-color:#D11B28!important;
     border: none;
     z-index: 10;
     width:100%;
 }
 
-.fixed-top.scrolled {
+/*.fixed-top.scrolled {
    background-color: rgba(132,33,248)!important;
   transition: background-color 200ms linear;
   border: none;
-}
+}*/
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff!important;
@@ -132,42 +164,23 @@ hr{
 }
 
 .custom-toggler .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("../images/menu.svg");
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: rgba(255,255,255);
+  border-color: transparent;
 } 
-
-p.lead{
-  font-family: 'Esteban', sans-serif;
-  font-size: 28px;
-  color:#fff;
-}
-
-p {
-  font-family: 'Esteban', sans-serif;
-  font-size: 22px;
-  color:#000;
-  line-height: 28px;
-}
-
-p.card-text{
-  font-size: 20px;
-  color:#000;
-  font-family: 'Esteban', sans-serif;
-}
 
 
 .btn-secondary {
     color: #fff;
-    background-color: #8522FA;
+    background-color: #D11B28;
     border-color: transparent;
 }
 
 .btn-secondary:hover{
-    color: #8522FA;
-    background-color: #fff;
+    color: #fff;
+    background-color: #333;
     border-color: transparent;
 }
 
@@ -186,27 +199,47 @@ p.card-text{
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-a.more{
-  color: #8522FA;
+a{
+  color: #D11B28;
   text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Cloud', sans-serif;
 
+}
+
+a:hover{
+  color: #333;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Changes position of caption */
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 /*-Section one*/
 
-.heading-container{
-  padding:50px;
-}
+#sectionOne{
+  background: #F2F2F2;
 
+}
 
 #sectionThree{
-   background-image: url(../images/wave2.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width:100%;
-  height: 100%;
+    background: #F2F2F2;
 }
+
 
 #sectionFour{
   background-image: url(../images/parallax.jpg);
@@ -258,11 +291,64 @@ a.more{
 
 .overview{
   color: #fff;
+  font-family: 'Cloud', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
 }
 .carousel .star-rating i {
   font-size: 18px;
   color: #fff;
 }
 
+.jumbotron-fluid{
+  width:100%;
+  height: auto;
+  background:#fff;
+
+
+}
+
+#sectionFive{
+  background-image: url(../images/parallax2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 100%;
+  color:#fff;
+ background-attachment:fixed;
+}
+
+footer{
+    background: #333;
+  color: #fff;
+  padding-top: 50px;
+
+}
+
+footer ul li{
+  list-style-type: none;
+}
+
+footer a{
+  color:#fff;
+  font-size: 18px;
+}
+
+footer a:hover{
+  color:  #F2F2F2;
+    font-size: 18px;
+}
+
+footer p{
+  color:#fff;
+  text-align: left;
+}
+
+p.copyright{
+  font-size: 12px;
+  color: #fff;
+}
 
 
