@@ -128,7 +128,7 @@ p {
 p.card-text{
   font-size: 20px;
   color:#000;
-  font-family: 'Esteban', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 p.caption{
@@ -140,13 +140,13 @@ p.caption{
 }
 
 h3{
-  font-family: 'Esteban', sans-serif;
+  font-family: 'Cloud', sans-serif;
   font-size: 20px;
   color:#707070;
 }
 
 h4{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cloud', sans-serif;
   font-style: bold;
   font-size: 20px;
   color:#8421F8;
@@ -154,7 +154,7 @@ h4{
 }
 
 h5{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cloud', sans-serif;
   font-style: bold;
   font-size: 20px;
   color:#707070;
@@ -173,7 +173,7 @@ hr{
 
 
 .bg-light{
-    background-color:#D11B28!important;
+    background-color:#000!important;
     border: none;
     z-index: 10;
     width:100%;
@@ -187,12 +187,19 @@ hr{
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff!important;
-    font-family: 'Esteban', sans-serif;
+    font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#D11B28!important;
+
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-   border-bottom: 1px solid #fff;
+
+     color:#D11B28!important;
 }
 
 .custom-toggler .navbar-toggler-icon{
@@ -335,8 +342,13 @@ a:hover{
 
 .jumbotron-fluid{
   width:100%;
-  height: auto;
   background:#fff;
+  background-image: url(../images/heroFinal.jpeg);
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  padding-top: 200px;
+  margin-bottom: 0px;
 
 
 }
@@ -381,6 +393,48 @@ footer p{
 p.copyright{
   font-size: 12px;
   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
 }
 
 
