@@ -468,7 +468,7 @@ a:hover{
 .jumbotron-fluid{
   width:100%;
   background:#fff;
-  background-image: url(../images/heroFinal.jpeg);
+  background-image: url(../images/heroFinal.jpg);
   background-repeat: no-repeat;
   height: auto;
   background-position: center;
@@ -490,9 +490,14 @@ a:hover{
 }
 
 footer{
-    background: #333;
   color: #fff;
   padding-top: 50px;
+  background-image: url(../images/bg_footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 100%;
 
 }
 
