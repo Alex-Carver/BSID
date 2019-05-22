@@ -68,7 +68,7 @@ section{
 h1{
 	font-family: 'Cloud', sans-serif;
 	font-style: normal;
-	font-size: 60px;
+	font-size: 40px;
 	color:#000;
   font-weight: bold;
   margin-bottom: 25px;
@@ -87,7 +87,7 @@ h1.display-phone{
 h2{
   font-family: 'Cloud', sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
  font-style: normal;
  color: #000;
 }
@@ -95,12 +95,13 @@ h2{
 
 p.lead{
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   color:#000;
   font-style: normal;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 500;
   line-height: 32px;
+  z-index: 100;
 }
 
 .br{
@@ -109,19 +110,19 @@ p.lead{
 
 p.lead-2{
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color:#A2A2A2;
   font-style: normal;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 300;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color:#000;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -161,15 +162,18 @@ h5{
 }
 
 hr{
-  border:1px solid #8522FA;
+  border:1px solid #000;
   width:20%;
   text-align: center;
+}
+
+.heading-spacer{
+  padding-bottom: 50px;
 }
 
 .logo{
 	width:200px;
 }
-
 
 
 .bg-light{
@@ -231,11 +235,27 @@ hr{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.btn-secondary-outline{
+  background:transparent;
+  box-shadow: none;
+  border: none;
+  color: #D11B28;
+  padding-top: 5px;
+}
+
+.btn:focused{
+
+  border: none;
+
+}
+
 .card{
   min-height: 400px;
   padding-top:15px;
   border-radius: 12px;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: none;
+ background:transparent;
+ border:none;
 }
 
 a{
@@ -272,11 +292,96 @@ a:hover{
 
 #sectionOne{
   background: #F2F2F2;
-
+  height: auto;
+  min-height: 800px;
+  background-image: url(../images/paper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
 }
 
-#sectionThree{
-    background: #F2F2F2;
+.tabs-section{
+  padding-bottom:120px;
+}
+
+#right1{
+  position: absolute;
+  right:0%;
+  top:0%;
+  width:25%;
+  
+}
+
+#left1{
+  position: absolute;
+  bottom:5%;
+  left:5%;
+  width:35%;
+  
+}
+
+#right2{
+  position: absolute;
+  right:0%;
+  top:0%;
+  display: none;
+  width:25%;  
+}
+
+#left2{
+  position: absolute;
+  bottom:0%;
+  left:0%;
+  display: none;
+  width:30%; 
+}
+
+#right3{
+  position: absolute;
+  right:0%;
+  top:0%;
+  display: none;
+  width:25%;  
+}
+
+#left3{
+  position: absolute;
+  bottom:0%;
+  left:0%;
+  display: none;
+  width:30%; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    border: 1px solid #000;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+     background-color: transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+}
+
+.tab-content{
+  padding-right: 100px;
+}
+
+
+#sectionTwo{
+  background-image: url(../images/paper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: auto;
 }
 
 
@@ -292,10 +397,13 @@ a:hover{
 }
 
 .carousel {
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    min-height: 400px;
+    height: auto;
 }
+
 .carousel .item {
     color: #fff;
     font-size: 14px;
@@ -340,14 +448,31 @@ a:hover{
   color: #fff;
 }
 
+
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 225px;
+    overflow:hidden;
+}
+
+/* smoother transitions */
+.carousel-inner>.carousel-item.next.left,
+.carousel-inner>.carousel-item.prev.right,
+{
+    transition: all 1s ease;
+}
+
+
 .jumbotron-fluid{
   width:100%;
   background:#fff;
   background-image: url(../images/heroFinal.jpeg);
   background-repeat: no-repeat;
-  height: 90vh;
+  height: auto;
   background-position: center;
-  padding-top: 200px;
+  padding-top: 50px;
   margin-bottom: 0px;
 
 
@@ -395,10 +520,43 @@ p.copyright{
   color: #fff;
 }
 
+@media (min-width: 768px){
+  .tabs-section{
+    padding-bottom: 80px;
+  }
+
+}
 
 
+@media only screen and (max-width: 600px) {
 
+ .tabs-section{
+    padding-bottom: 50px;
+  }
 
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    border: 1px solid #000;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+     background-color: transparent;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    padding:5px;
+}
+
+.tab-content{
+  padding-right: 0px;
+}
+
+}
 
 
 
