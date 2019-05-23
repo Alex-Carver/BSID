@@ -42,8 +42,16 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Portfolio</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Association Websites</a>
+          <a class="dropdown-item" href="#">Association Auctions</a>
+          <a class="dropdown-item" href="#">Our Services</a>
+          <a class="dropdown-item" href="#">Responsive Design</a>
+        </div>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Testimonials</a>
@@ -93,14 +101,14 @@ no time to cut corners.
 <section id="sectionOne" style="position: relative;">
   <div class="container">
      <div class="row tabs-section">
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center animateMe delay-1" data-animation="fadeIn">
         <h2>Why Choose Us</h2>
         <hr>
       </div>
     </div>
   </div>
   <div class="container">
-  <div class="row  align-items-center">
+  <div class="row  align-items-center animateMe delay-1" data-animation="fadeIn">
   <div class="col-lg-3 text-right col-md-12" style="margin-bottom: 30px;">
     <div class="nav flex-lg-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Responsive Design</a>
@@ -211,19 +219,16 @@ I would strongly recommend them to design and manage any website."</p>
 
 <section id="sectionTwo">
   <div class="container-fluid">
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center animateMe delay-1" data-animation="fadeIn" >
       <div class="col-lg-3 col-md-12 text-center ">
         <h2>Newest Sites</h2>
         <p>View our latest work and visit 
         our portfolio for inspiration!</p>
-        <a href="portfolio.html">View Portfolio</a>
+        <button type="button" class="btn btn-secondary">View Portfolio</button>
       </div>
       <div class="col-lg-9 col-md-12  no-gutters">
 <!-- Flickity HTML init -->
 <div class="carousel carousel2" data-flickity='{ "autoPlay": 2500 , "pauseAutoPlayOnHover": false , "wrapAround": true }'>
-  <div class="carousel-cell">
-    <img class="img-fluid" src="./images/responsive1.png" alt="slide1">
-  </div>
   <div class="carousel-cell">
     <img class="img-fluid" src="./images/bitnheaven.jpg" alt="slide 2">
   </div>
