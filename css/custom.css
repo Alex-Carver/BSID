@@ -458,16 +458,12 @@ a:hover{
 }
 
 .carousel-cell {
-  width: 50%;
+  width: 33%;
   height: auto;
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: gallery-cell;
   background:transparent;
-  /*background-image: url('../images/border.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
 .flickity-prev-next-button {
@@ -576,10 +572,19 @@ p.copyright{
   color: #fff;
 }
 
-@media (min-width: 768px){
+@media (msx-width: 768px){
   .tabs-section{
     padding-bottom: 80px;
   }
+
+  .carousel-cell {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  background:transparent;
+}
 
 }
 
@@ -610,6 +615,15 @@ p.copyright{
 
 .tab-content{
   padding-right: 0px;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  background:transparent;
 }
 
 }
