@@ -1,6 +1,3 @@
-
-
-
 function scrollWaypointInit( items, trigger ) {
   items.each( function() {
     var element = $(this),
@@ -100,7 +97,6 @@ scrollWaypointInit( $('.animateMe') );
             $('#left3').hide();
         });
     });
-
 
  
 
