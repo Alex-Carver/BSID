@@ -1,3 +1,5 @@
+
+//Animate Css triggers on scroll
 function scrollWaypointInit( items, trigger ) {
   items.each( function() {
     var element = $(this),
