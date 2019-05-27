@@ -275,14 +275,6 @@ hr{
 
 }
 
-.card{
-  min-height: 400px;
-  padding-top:15px;
-  border-radius: 12px;
- box-shadow: none;
- background:transparent;
- border:none;
-}
 
 .portfolio-card{
  height: auto;
@@ -629,81 +621,193 @@ p.copyright{
  padding-top: 20px;
 }
 
-#portfolio .nav-pills .nav-link {
-    border-radius: .25rem;
-    background-color: transparent;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    border:none;
-    color:#fff;
-}
-
-#portfolio .nav-pills .nav-link:hover{
-    border-radius: .25rem;
-    background-color: transparent;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    border:none;
-    color:#000;
-}
-
-#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #000;
-    background-color: none;
-}
-
-mt-4, .my-4 {
-    margin-top: 20px!important;
-    margin-bottom: 0px!important;
-    background:#D11B28;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-
-
-.img-container {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000;
-}
-
-.img-container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.nav-tabs-container{
+  background: #D11B28;
+  width:100%;
   text-align: center;
 }
+
+#filters {
+  margin:1%;
+  padding:0;
+  list-style:none;
+  text-align: center;
+  display: inline-flex;
+}
+
+  #filters li {
+    float:left;
+  }
+  
+  #filters li span {
+    display: block;
+    padding:5px 20px;   
+    text-decoration:none;
+    color:#fff;
+    cursor: pointer;
+    border-right: 1px solid #fff;
+  }
+  
+  #filters li span.active {
+    background: none;
+    color:#000;
+  }
+
+  #filters li span:hover{
+    background: none;
+    color:#000;
+  }
+ 
+
+ 
+#portfoliolist .portfolio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width:30%;
+  margin:1%;
+  display:none;
+  float:left;
+  overflow:hidden;
+}
+
+  .portfolio-wrapper {
+    overflow:hidden;
+    position: relative !important;
+    background: #666;
+    cursor:pointer;
+    width:100%;
+  }
+
+  .portfolio img {
+    max-width:100%;
+    position: relative;
+    top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);   
+  }
+  
+  .portfolio .label {
+    position: absolute;
+    width: 100%;
+    height:60px;
+    bottom:-60px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+    .portfolio .label-bg {
+      background: #D11B28;
+      width: 100%;
+      height:100%;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  
+    .portfolio .label-text {
+      color:#fff;
+      position: relative;
+      z-index:500;
+      padding:10px 8px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      text-align: center;
+    }
+    
+    a.text-title{
+      font-family: 'Roboto', sans-serif;
+      font-style:bold;
+      font-size: 15px;
+      color:#fff;
+      margin-bottom: 10px;
+    }
+
+     a.text-title:hover{
+      font-family: 'Roboto', sans-serif;
+      font-style:bold;
+      font-size: 15px;
+      color:#000;
+      margin-bottom: 10px;
+    }
+
+
+
+      .portfolio .text-category {
+        display:block;
+        font-size:9px;
+      }
+  
+  .portfolio:hover .label {
+    bottom:0;
+  }
+  .portfolio:hover img {
+    top:-30px;
+  }  
+
+  
+
+
+
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+
+  
+  #portfoliolist .portfolio {
+    width:99%;
+    margin:1%;
+  }   
+
+  #ads {
+    display:none;
+  }
+  
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  #ads {
+    display:none;
+  }
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
 
 @media (max-width: 768px){
   .tabs-section{
@@ -720,6 +824,28 @@ mt-4, .my-4 {
   border:2px solid #fff;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+#filters {
+  margin:1%;
+  padding:0;
+  list-style:none;
+  text-align: center;
+  display: block;
+}
+
+ #portfoliolist .portfolio {
+    width:48%;
+    margin:1%;
+  }
+
+   #filters li span {
+    display: block;
+    padding:5px 5px;   
+    text-decoration:none;
+    color:#fff;
+    cursor: pointer;
+    border-right: 1px solid #fff;
+  }
 
 }
 
@@ -762,6 +888,15 @@ mt-4, .my-4 {
   border:2px solid #fff;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+  #filters li span {
+    display: block;
+    padding:5px 5px;   
+    text-decoration:none;
+    color:#fff;
+    cursor: pointer;
+    border-right: none
+  }
 
 }
 
