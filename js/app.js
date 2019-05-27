@@ -115,5 +115,29 @@ scrollWaypointInit( $('.animateMe') );
         });
     });
 
+    var sidebarScrollTop = 0;
+
+$(document).ready(function() {
+    sidebarScrollTop = $("#sidebar").offset();
+
+    $(window).scroll(function () { 
+        var docScrollTop = $('body,html').scrollTop();
+
+        if(docScrollTop > sidebarScrollTop.top) {
+            $("#sidebar").css({ position: 'fixed', top: '60px' });
+        } else {
+            $("#sidebar").css({ position: 'static' });
+        }
+    });
+});
+
+$(window).resize(function() {
+    sidebarScrollTop = $("#sidebar").offset().top;
+});
+
+$(document).resize(function() {
+    sidebarScrollTop = $("#sidebar").offset().top;
+});
+
  
 
