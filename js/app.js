@@ -1,18 +1,4 @@
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
 
-
-$(".scrollTo").on('click', function(e) {
-     e.preventDefault();
-     var target = $(this).attr('href');
-     $('html, body').animate({
-       scrollTop: ($(target).offset().top)
-     }, 1000);
-  });
 
 
 function scrollWaypointInit( items, trigger ) {
@@ -115,29 +101,6 @@ scrollWaypointInit( $('.animateMe') );
         });
     });
 
-    var sidebarScrollTop = 0;
-
-$(document).ready(function() {
-    sidebarScrollTop = $("#sidebar").offset();
-
-    $(window).scroll(function () { 
-        var docScrollTop = $('body,html').scrollTop();
-
-        if(docScrollTop > sidebarScrollTop.top) {
-            $("#sidebar").css({ position: 'fixed', top: '60px' });
-        } else {
-            $("#sidebar").css({ position: 'static' });
-        }
-    });
-});
-
-$(window).resize(function() {
-    sidebarScrollTop = $("#sidebar").offset().top;
-});
-
-$(document).resize(function() {
-    sidebarScrollTop = $("#sidebar").offset().top;
-});
 
  
 

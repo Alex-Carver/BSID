@@ -628,68 +628,14 @@ p.copyright{
   height: auto;
 }
 
-
-#portfolio-navigation{
-  position: relative;
-  height: auto;
-  padding:0;
+#portfolio .nav-pills .nav-link {
+    border-radius: .25rem;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    border:none;
 }
-
-
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  z-index: 1000;
-  border-bottom: 1px solid black;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  color:#000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-div.scrollmenu a:hover {
-  background-color: none;
-  color:  #D11B28;
-
-}
-
-.navbar-nav2{
-  list-style-type: none;
-     overflow-x: scroll;
-        background-image: url(../images/paper.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
-  width:100%;
-   overflow-x: scroll;
-}
-.navbar-nav2 li{
-   display: inline-block;
-  padding-right: 10px;
-}
-
-
-#sidebar{
-  position: static;
-   background-image: url(../images/paper.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
-  width:100%;
-   overflow-x: scroll;
-    transition: .3s ease;
-}
-
 
 .img-container {
   position: relative;
